@@ -1,16 +1,48 @@
-<div >
-<article [class.content]="!deviceXs" [class.content-mob]="deviceXs" class="content-color" (scroll)="onScroll($event)">
-    <div style="margin: 20px;">
+<div>
+    <article [class.content]="!deviceXs" [class.content-mob]="deviceXs" class="content-color"
+        (scroll)="onScroll($event)">
         <form>
             <div class="container card-color" style="text-align: center;margin: 20px 20% 20%;">
-                <div style="font-size: large;text-align: center;">
-                    <label style="font-weight: bold;"><b>Contact Us</b></label><br><br>
-                    <label><b>Reshmi Vyas</b></label><br><br>
-                    <label><b>rashmi4uguys@gmail.com</b></label><br><br>
-                    <label><b>+1 732 829 7178</b></label><br><br>
+                <div style="font-size: large;">
+                    <label style="font-weight: bold;font-size: xx-large;"><b>Contact Us</b></label><br><br>
+
+                    <div class="row">
+                        <div class="column">
+                            <label style="float: right;"><b>Name: &nbsp;&nbsp;&nbsp;</b></label><br><br>
+                            <label style="float: right;"><b>Email: &nbsp;&nbsp;&nbsp;</b></label><br><br>
+                            <label style="float: right;"><b>Mobile:&nbsp;&nbsp;</b></label><br><br>
+                            <label style="float: right;"><b>Address:</b></label><br><br>
+                        </div>
+
+                        <div class="column">
+                            <label style="float: left;"><b>Reshmi Vyas</b></label><br><br>
+                            <label style="float: left;"><b>rashmi4uguys@gmail.com</b></label><br><br>
+                            <label style="float: left;"><b>+1 732 829 7178</b></label><br><br>
+                            <label style="float: left;"><b>Novi, Michigan</b></label><br><br>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <a href="https://facebook.com/tastytreatscustomcakes" target="_blank" style="margin-right: 30px;">
+                        <img title="Facebook" alt="Facebook" src="../../../assets/images/icons/icons8-facebook-240.png"
+                            width="35" height="35">
+                    </a>
+
+                    <a href="https://instagram.com/tastytreatscustomcakes" target="_blank" style="margin-right: 30px;">
+                        <img title="Instagram" alt="Instagram"
+                            src="../../../assets/images/icons/icons8-instagram-240.png" width="35" height="35">
+                    </a>
+
+                    <a href="https://youtube.com/tastytreatscustomcakes" target="_blank" style="margin-right: 30px;">
+                        <img title="Instagram" alt="Instagram" src="../../../assets/images/icons/icons8-youtube-256.png"
+                            width="35" height="35">
+                    </a>
+
                 </div>
             </div>
         </form>
-    </div>
-</article>
+
+    </article>
 </div>

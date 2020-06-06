@@ -7,6 +7,22 @@ body {
   box-sizing: border-box;
 }
 
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 /* Add padding to container elements */
 
 .container {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-aboutus',
@@ -8,8 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class AboutusComponent implements OnInit {
 
   constructor() { }
+  @Input() deviceXs: boolean;
+  topVal = 0;
 
-  ngOnInit(): void {
+  onScroll(e) {
+    let scrollXs = this.deviceXs ? 55 : 73;
+    if (e.srcElement.scrollTop < scrollXs) {
+      this.topVal = e.srcElement.scrollTop;
+    } else {
+      this.topVal = scrollXs;
+    }
+  }
+  sideBarScroll() {
+    let e = this.deviceXs ? 160 : 130;
+    return e - this.topVal;
+  }
+  ngOnInit() {
   }
 
 }
