@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'flex-tutorial';
+  title = 'custom-cakes';
   mediaSub: Subscription;
   deviceXs: boolean;
   constructor(public mediaObserver: MediaObserver) {
