@@ -19,12 +19,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContentComponent } from './content/content.component';
+import { ContactUSComponent } from './components/contact-us/contact-us.component';
+import { ProductsComponent } from './components/products/products.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { NgForm, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ContentComponent,
+    ContactUSComponent,
+    ProductsComponent,
+    HomeComponent,
+    AboutusComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +41,8 @@ import { ContentComponent } from './content/content.component';
     FlexLayoutModule,
     HttpClientModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
     // MatToolbarModule,
     // MatIconModule,
     // MatMenuModule,

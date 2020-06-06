@@ -1,32 +1,26 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ProductDetailService } from '../services/product-detail.service';
-import { CakeModel } from '../models/cakeModel';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { MediaObserver, MediaChange } from '@angular/flex-layout';
+import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
-export class ContentComponent implements OnInit {
+export class ContentComponent implements OnInit, OnDestroy {
 
-  constructor(private productDetailService: ProductDetailService) { }
-  @Input() deviceXs: boolean;
-  topVal = 0;
+  title = 'flex-tutorial';
+  mediaSub: Subscription;
+  deviceXs: boolean;
+  constructor(public mediaObserver: MediaObserver) {
 
-  getCakes: CakeModel;
-  onScroll(e) {
-    let scrollXs = this.deviceXs ? 55 : 73;
-    if (e.srcElement.scrollTop < scrollXs) {
-      this.topVal = e.srcElement.scrollTop;
-    } else {
-      this.topVal = scrollXs;
-    }
-  }
-  sideBarScroll() {
-    let e = this.deviceXs ? 160 : 130;
-    return e - this.topVal;
   }
   ngOnInit() {
-    this.getCakes = this.productDetailService.getCakes();
-    console.log(this.getCakes.cakes[0].name);
+    this.mediaSub = this.mediaObserver.media$.subscribe((res: MediaChange) => {
+      console.log(res.mqAlias);
+      this.deviceXs = res.mqAlias === "xs" ? true : false;
+    })
+  }
+  ngOnDestroy() {
+    this.mediaSub.unsubscribe();
   }
 }

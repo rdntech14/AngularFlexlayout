@@ -1,3 +1,4 @@
+@import '../app.component.css';
 .sticky {
   padding: 0px;
   position: fixed;
@@ -9,8 +10,4 @@
 .logo {
   padding: 0px 5px;
   font-size: 20px;
-}
-
-.header-color{
-  background-color: #FFDAB9;
 }
