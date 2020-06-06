@@ -21,6 +21,36 @@ const cakeResponse = {
     {
       "id": 1001,
       "name": "Special Celebration Cake",
+      "image": "m_1006.jpeg",
+      "price": 50
+    },
+    {
+      "id": 1002,
+      "name": "Blueberry Cake",
+      "image": "m_1007.jpeg",
+      "price": 150
+    },
+    {
+      "id": 1003,
+      "name": "Floating Hearts Cake",
+      "image": "m_1008.jpeg",
+      "price": 200
+    },
+    {
+      "id": 1004,
+      "name": "Rich Fruit Cake",
+      "image": "m_1009.jpeg",
+      "price": 250
+    },
+    {
+      "id": 1005,
+      "name": "Tiramisu Cake",
+      "image": "m_1010.jpeg",
+      "price": 300
+    },
+    {
+      "id": 1001,
+      "name": "Special Celebration Cake",
       "image": "k_1001.jpeg",
       "price": 50
     },

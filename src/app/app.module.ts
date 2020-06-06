@@ -16,9 +16,8 @@ import { MaterialModule } from './material/material.module';
 import { HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ContentComponent } from './content/content.component';
 import { ContactUSComponent } from './components/contact-us/contact-us.component';
 import { ProductsComponent } from './components/products/products.component';
 import { HomeComponent } from './components/home/home.component';
@@ -29,7 +28,6 @@ import { NgForm, FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContentComponent,
     ContactUSComponent,
     ProductsComponent,
     HomeComponent,
@@ -43,16 +41,6 @@ import { NgForm, FormsModule } from '@angular/forms';
     AppRoutingModule,
     MaterialModule,
     FormsModule
-    // MatToolbarModule,
-    // MatIconModule,
-    // MatMenuModule,
-    // MatButtonModule,
-    // MatRippleModule,
-    // MatFormFieldModule,
-    // MatInputModule,
-    // MatSidenavModule,
-    // MatCardModule,
-    // MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
