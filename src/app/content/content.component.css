@@ -21,6 +21,7 @@
 .example-card {
   max-width: 500px;
   margin: 0px 5px 5px 0px;
+  margin-bottom:30px;
 }
 
 .example-header-image {
@@ -47,3 +48,13 @@ mat-drawer {
   background-color: rgba(83, 83, 83, 0.178);
   cursor: pointer;
 }
+
+
+.content-color {
+  background-color:#FFFAF0;
+}
+
+.card-color{
+  background-color: #FFEFD5;
+}
+

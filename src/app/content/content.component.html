@@ -7,8 +7,8 @@
     </button>
     Component
   </mat-toolbar> -->
-
-  <mat-drawer-container class="example-container">
+ 
+  <mat-drawer-container class="example-container content-color">
     <!-- <mat-drawer #drawer [mode]="deviceXs?'over':'side'" [opened]="deviceXs?false:true" position="start" fxFlex="20"
       fxLayout="column" fxLayoutAlign="start space-between" [style.marginTop.px]="10" [style.top.px]="sideBarScroll()">
       <mat-list role="list" class="list-width" *ngFor="let i of [].constructor(20)">
@@ -18,7 +18,7 @@
     <!-- <p>Test</p> -->
     <mat-drawer-content>
       <div class="example-sidenav-content" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-evenly center">
-        <mat-card class="example-card" *ngFor="let c of getCakes.cakes">
+        <mat-card class="example-card card-color" *ngFor="let c of getCakes.cakes">
           <!-- <mat-card-header>
             <div mat-card-avatar class="example-header-image" fxLayoutAlign.xs="center center"></div>
             <mat-card-title>Shiba Inu</mat-card-title>
@@ -27,13 +27,13 @@
           <img mat-card-image src="../../assets/images/cakes/{{c.image}}"
             alt="Photo of a Shiba Inu">
           <mat-card-content>
-            <label>
+            <label style="font-weight: bold">
               {{c.name}}
             </label>
           </mat-card-content>
           <mat-card-actions>
-            <label mat-button>{{c.price}}</label>
-            <button mat-button>SHARE</button>
+            <label mat-button>${{c.price}}</label>
+            <button mat-button>Buy Now</button>
           </mat-card-actions>
         </mat-card>
 
@@ -41,4 +41,5 @@
       </div>
     </mat-drawer-content>
   </mat-drawer-container>
+
 </article>

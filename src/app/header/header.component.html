@@ -1,12 +1,11 @@
-<mat-toolbar color="primary" class="sticky">
+<mat-toolbar class="header-color sticky">
   <mat-toolbar-row fxLayoutAlign="space-between center">
     <div fxLayout="row">
       <button mat-button>
         <mat-icon>home</mat-icon>
-        <span class="logo">Custom Cakes</span>
+        <span class="logo">Tasty Treats-Custom Cakes</span>
       </button>
       <div *ngIf="!deviceXs" fxLayout="row">
-        <button mat-button>Home</button>
         <button mat-button>About us</button>
         <button mat-button>Products</button>
         <button mat-button>Cakes</button>
@@ -28,7 +27,6 @@
     </div> -->
   </mat-toolbar-row>
   <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
-    <button mat-button>Home</button>
     <button mat-button>About us</button>
     <button mat-button>Products</button>
     <button mat-button>Cakes</button>

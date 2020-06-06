@@ -20,32 +20,92 @@ const cakeResponse = {
   "cakes": [
     {
       "id": 1001,
-      "name": "name_1001",
-      "image": "i_1001.jpeg",
+      "name": "Special Celebration Cake",
+      "image": "k_1001.jpeg",
       "price": 50
     },
     {
       "id": 1002,
-      "name": "name_1002",
-      "image": "i_1002.jpeg",
+      "name": "Blueberry Cake",
+      "image": "k_1002.jpeg",
       "price": 150
     },
     {
       "id": 1003,
-      "name": "name_1003",
-      "image": "i_1003.jpeg",
+      "name": "Floating Hearts Cake",
+      "image": "k_1003.jpeg",
       "price": 200
     },
     {
       "id": 1004,
-      "name": "name_1004",
-      "image": "i_1004.jpeg",
+      "name": "Rich Fruit Cake",
+      "image": "k_1004.jpeg",
       "price": 250
     },
     {
       "id": 1005,
-      "name": "name_1005",
-      "image": "i_1005.jpeg",
+      "name": "Tiramisu Cake",
+      "image": "k_1005.jpeg",
+      "price": 300
+    },
+    {
+      "id": 1001,
+      "name": "Special Celebration Cake",
+      "image": "k_1006.jpeg",
+      "price": 50
+    },
+    {
+      "id": 1002,
+      "name": "Blueberry Cake",
+      "image": "k_1007.jpeg",
+      "price": 150
+    },
+    {
+      "id": 1003,
+      "name": "Floating Hearts Cake",
+      "image": "k_1008.jpeg",
+      "price": 200
+    },
+    {
+      "id": 1004,
+      "name": "Rich Fruit Cake",
+      "image": "k_1009.jpeg",
+      "price": 250
+    },
+    {
+      "id": 1005,
+      "name": "Tiramisu Cake",
+      "image": "k_1010.jpeg",
+      "price": 300
+    },
+    {
+      "id": 1001,
+      "name": "Special Celebration Cake",
+      "image": "k_1011.jpeg",
+      "price": 50
+    },
+    {
+      "id": 1002,
+      "name": "Blueberry Cake",
+      "image": "k_1012.jpeg",
+      "price": 150
+    },
+    {
+      "id": 1003,
+      "name": "Floating Hearts Cake",
+      "image": "k_1013.jpeg",
+      "price": 200
+    },
+    {
+      "id": 1004,
+      "name": "Rich Fruit Cake",
+      "image": "k_1014.jpeg",
+      "price": 250
+    },
+    {
+      "id": 1005,
+      "name": "Tiramisu Cake",
+      "image": "k_1015.jpeg",
       "price": 300
     }
   ]
