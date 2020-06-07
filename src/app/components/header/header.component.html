@@ -6,7 +6,7 @@
         <span class="logo" routerLink="/home">Tasty Treats-Custom Cakes</span>
       </button>
       <div *ngIf="!deviceXs" fxLayout="row">
-        <!-- <button mat-button routerLink="/aboutus">About us</button> -->
+        <button mat-button routerLink="/aboutus">About us</button>
         <button mat-button routerLink="/home">Cakes</button>
         <button mat-button routerLink="/products">Products</button>
         <button mat-button routerLink="/contactus">Contact us</button>
@@ -27,7 +27,7 @@
     </div> -->
   </mat-toolbar-row>
   <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
-    <!-- <button mat-button routerLink="/aboutus">About us</button> -->
+    <button mat-button routerLink="/aboutus">About us</button>
     <button mat-button routerLink="/home">Cakes</button>
     <button mat-button routerLink="/products">Products</button>
     <button mat-button routerLink="/contactus">Contact us</button>
