@@ -1,13 +1,14 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
 import { Subscription } from 'rxjs';
+import { GlobalConstants } from 'src/app/globalConstants';
 
 @Component({
   selector: 'app-aboutus',
   templateUrl: './aboutus.component.html',
   styleUrls: ['./aboutus.component.css']
 })
-export class AboutusComponent implements OnInit, OnDestroy {
+export class AboutusComponent implements OnInit {
 
   mediaSub: Subscription;
   deviceXs: boolean;
@@ -30,13 +31,7 @@ export class AboutusComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.mediaSub = this.mediaObserver.media$.subscribe((res: MediaChange) => {
-      console.log(res.mqAlias);
-      this.deviceXs = res.mqAlias === "xs" ? true : false;
-    });
-  }
-  ngOnDestroy() {
-    this.mediaSub.unsubscribe();
+    this.deviceXs = GlobalConstants.deviceXs;
   }
 
 }

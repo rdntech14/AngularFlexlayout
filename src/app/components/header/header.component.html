@@ -6,10 +6,10 @@
         <span class="logo" routerLink="/home">Tasty Treats-Custom Cakes</span>
       </button>
       <div *ngIf="!deviceXs" fxLayout="row">
-        <button mat-button routerLink="/aboutus">About us</button>
-        <button mat-button routerLink="/home">Cakes</button>
-        <button mat-button routerLink="/products">Products</button>
-        <button mat-button routerLink="/contactus">Contact us</button>
+        <button mat-button routerLink="/aboutus" class="header-font">About us</button>
+        <button mat-button routerLink="/home" class="header-font">Cakes</button>
+        <button mat-button routerLink="/products" class="header-font">Products</button>
+        <button mat-button routerLink="/contactus" class="header-font">Contact us</button>
       </div>
     </div>
     <!-- <div>
@@ -27,10 +27,10 @@
     </div> -->
   </mat-toolbar-row>
   <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
-    <button mat-button routerLink="/aboutus">About us</button>
-    <button mat-button routerLink="/home">Cakes</button>
-    <button mat-button routerLink="/products">Products</button>
-    <button mat-button routerLink="/contactus">Contact us</button>
+    <button mat-button routerLink="/aboutus" class="header-font">About us</button>
+    <button mat-button routerLink="/home" class="header-font">Cakes</button>
+    <button mat-button routerLink="/products" class="header-font">Products</button>
+    <button mat-button routerLink="/contactus" class="header-font">Contact us</button>
   </mat-toolbar-row>
 </mat-toolbar>
 <!-- Menu Items -->

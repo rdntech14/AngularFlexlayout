@@ -3,13 +3,13 @@ import { ProductDetailService } from 'src/app/services/product-detail.service';
 import { CakeModel } from 'src/app/models/cakeModel';
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
 import { Subscription } from 'rxjs';
-
+import { GlobalConstants } from 'src/app/globalConstants';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit {
 
   mediaSub: Subscription;
   deviceXs: boolean;
@@ -32,19 +32,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     return e - this.topVal;
   }
   ngOnInit() {
-
-    this.mediaSub = this.mediaObserver.media$.subscribe((res: MediaChange) => {
-      console.log(res.mqAlias);
-      this.deviceXs = res.mqAlias === "xs" ? true : false;
-    })
-
+    this.deviceXs = GlobalConstants.deviceXs;
 
     this.getCakes = this.productDetailService.getCakes();
     console.log(this.getCakes.cakes[0].name);
   }
-
-  ngOnDestroy() {
-    this.mediaSub.unsubscribe();
-  }
-
 }
