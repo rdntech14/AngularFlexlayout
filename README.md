@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+20px Roboto, "Helvetica Neue", sans-serif - Title
+16px Roboto, "Helvetica Neue", sans-serif - Header
+14px Roboto, "Helvetica Neue", sans-serif - cake name
+14px Roboto, "Helvetica Neue", sans-serif - Buy Now
+
+About me - Name  - 32px Roboto, "Helvetica Neue", sans-serif - Title
+About me - Para  - 14px Roboto, "Helvetica Neue", sans-serif - Title

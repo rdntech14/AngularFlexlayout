@@ -1,11 +1,15 @@
 .header-color {
-    background-color: #d6aaff;
+    background-color:#df80ff;
 }
 
 .card-color {
-    background-color: #e7ccff;
+    background-color: #ecb3ff;
 }
 
 .content-color {
-    background-color: #f8eeff;
+    background-color: #f9e6ff;
+}
+
+.uppercase{
+text-transform: uppercase;
 }

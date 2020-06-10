@@ -3,23 +3,23 @@
         (scroll)="onScroll($event)">
         <div *ngIf="!deviceXs">
             <form>
-                <div class="container card-color" style="text-align: center;margin: 20px 20% 20%;">
+                <div class="container card-color curvedEdges mat-elevation-z8" style="text-align: center;margin: 20px 20% 20%;">
                     <div style="font-size: large;">
-                        <label style="font-weight: bold;font-size: xx-large;"><b>Contact Us</b></label><br><br>
+                        <label style="font-weight: bold;font-size: large;"><b>Contact Us</b></label><br><br>
 
                         <div class="row">
-                            <div class="column" style="width: 40%;">
-                                <label style="float: right;"><b>Name: &nbsp;&nbsp;&nbsp;</b></label><br><br>
-                                <label style="float: right;"><b>Email: &nbsp;&nbsp;&nbsp;</b></label><br><br>
-                                <label style="float: right;"><b>Mobile:&nbsp;&nbsp;</b></label><br><br>
-                                <label style="float: right;"><b>Address:</b></label><br><br>
+                            <div class="column">
+                                <label style="float: right;font-size: medium;">Name: &nbsp;&nbsp;&nbsp;</label><br><br>
+                                <label style="float: right;font-size: medium;">Email: &nbsp;&nbsp;&nbsp;</label><br><br>
+                                <label style="float: right;font-size: medium;">Mobile:&nbsp;&nbsp;</label><br><br>
+                                <label style="float: right;font-size: medium;">Address:</label><br><br>
                             </div>
 
-                            <div class="column" style="width: 60%;">
-                                <label style="float: left;"><b>Reshmi Vyas</b></label><br><br>
-                                <label style="float: left;"><b>rashmi4uguys@gmail.com</b></label><br><br>
-                                <label style="float: left;"><b>+1 732 829 7178</b></label><br><br>
-                                <label style="float: left;"><b>22690 Heatherbrae Way, Novi, MI</b></label><br><br>
+                            <div class="column">
+                                <label style="float: left;font-size: medium;">Reshmi Johar</label><br><br>
+                                <label style="float: left;font-size: medium;">tastytreats@tastytreats-customcakes.com</label><br><br>
+                                <label style="float: left;font-size: medium;">+1 7328297178</label><br><br>
+                                <label style="float: left;font-size: medium;">22690 Heatherbrae Way, Novi, MI</label><br><br>
                             </div>
                         </div>
 
@@ -37,7 +37,6 @@
                             <img title="Instagram" alt="Instagram"
                                 src="../../../assets/images/icons/icons8-instagram-240.png" width="35" height="35">
                         </a>
-
                         <a href="https://youtube.com/tastytreatscustomcakes" target="_blank"
                             style="margin-right: 30px;">
                             <img title="Instagram" alt="Instagram"
@@ -49,12 +48,19 @@
             </form>
         </div>
         <div *ngIf="deviceXs">
-            <div class="container card-color" style="text-align: center;float:center;margin: 5% 5% 5%;">
+            <div class="container card-color curvedEdges mat-elevation-z8" style="margin: 5% 5% 5%; padding-left:20%;">
+         
+                <label style="font-size: medium;font-weight:bold;" class="uppercase">Reshmi Johar</label><br><br>
 
-                <label style="float: center;font-size: x-large;"><b>Reshmi Vyas</b></label><br><br>
-                <label style="float: center;font-size: medium;"><b>rashmi4uguys@gmail.com</b></label><br><br>
-                <label style="float: center;font-size: medium;"><b>+1 732 829 7178</b></label><br><br>
-                <label style="float: center;font-size: medium;"><b>22690 Heatherbrae Way, Novi, MI</b></label><br><br>
+                <label style="font-size: 14px;">tastytreats@tastytreats-customcakes.com</label><br>
+                <label style="font-size: 14px;">22690 Heatherbrae Way, Novi, MI</label><br>
+                <label style="font-size: 14px;">+1 (732) 829-7178</label><br>
+            <br>
+                <a href="https://facebook.com/tastytreatscustomcakes" target="_blank"
+                            style="margin-right: 30px;">
+                            <img title="Facebook" alt="Facebook"
+                                src="../../../assets/images/icons/icons8-facebook-240.png" width="35" height="35">
+                        </a>
             </div>
         </div>
     </article>

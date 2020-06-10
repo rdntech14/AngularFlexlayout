@@ -10,7 +10,7 @@ body {
 /* Create two columns that float next to eachother */
 .column {
   float: left;
-  width: 50%;
+  width: 40%;
   margin-top: 6px;
   padding: 20px;
 }
@@ -55,4 +55,8 @@ body {
   right: 0px;
   bottom: 0px;
   overflow-y: scroll;
+}
+
+.roundEdges {
+  border-radius: 10px;
 }
