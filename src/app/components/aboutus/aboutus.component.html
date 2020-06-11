@@ -1,7 +1,7 @@
 <article [class.content]="!deviceXs" [class.content-mob]="deviceXs" class="content-color" (scroll)="onScroll($event)">
     <form>
-            <div *ngIf="!deviceXs">
-                <div class="container card-color mat-elevation-z8 roundEdges" style="margin: 20px 20% 20%;">
+        <div *ngIf="!deviceXs">
+            <div class="container card-color mat-elevation-z8 roundEdges" style="margin: 20px 20% 20%;">
 
                 <div class="row">
                     <div class="column">
@@ -10,7 +10,8 @@
 
                     <div class="column">
                         <label style="font-size: medium; font-weight: bold;" class="uppercase">Reshmi Johar</label>
-                        <p class="pfont" style="text-align: justify; margin-top: 10px;"><b></b> Bakers use their understanding of ingredients and food preparation to
+                        <p class="pfont" style="text-align: justify; margin-top: 10px;"><b></b> Bakers use their
+                            understanding of ingredients and food preparation to
                             craft
                             recipes and create baked goods. They measure and mix raw ingredients, bake and decorate
                             items,
@@ -25,31 +26,32 @@
             </div>
         </div>
 
-            <div *ngIf="deviceXs">
-                <div class="container card-color mat-elevation-z8 roundEdges" style="margin: 5%;">
+        <div *ngIf="deviceXs">
+            <div class="container card-color mat-elevation-z8 roundEdges" style="margin: 5%;">
 
+                <div style="width: 100%; height: 50%;">
+                    <img style="width:100%; height: 100%;padding: 20px 20px 20px 20px"
+                        src="../../../assets/images/profile/aboutprofile.jpg">
+                </div>
 
-                   
-                        <img style="width: 360px; height: 360px;padding: 20px;" src="../../../assets/images/profile/aboutprofile.jpg">
-                    
-
-                    <div>
-                        <div style="text-align: center;">
+                <div>
+                    <div style="text-align: center;">
                         <label style="font-size: medium; font-weight: bold" class="uppercase">Reshmi Johar</label>
                     </div>
-                        <p style="padding: 20px 0px 20px 20px;text-align: justify;"><b></b> Bakers use their understanding of ingredients and food preparation to
-                            craft
-                            recipes and create baked goods. They measure and mix raw ingredients, bake and decorate
-                            items,
-                            and ensure that all raw and finished goods adhere to quality and food safety standards.
-                            About Baker Rashmi Johar, She is a passionate baker who everytime pulls her limits and
-                            delivers
-                            the best results. She is a Fashion designer by profession and did her leather specialization
-                            from National Institute of Fashion Technology, Delhi , India. Baking was her hobby but she
-                            gradually became her passion and profession.</p><br><br>
-                    </div>
+                    <p style="padding: 20px 20px 0px 20px;text-align: justify;"><b></b> Bakers use their understanding
+                        of ingredients and food preparation to
+                        craft
+                        recipes and create baked goods. They measure and mix raw ingredients, bake and decorate
+                        items,
+                        and ensure that all raw and finished goods adhere to quality and food safety standards.
+                        About Baker Rashmi Johar, She is a passionate baker who everytime pulls her limits and
+                        delivers
+                        the best results. She is a Fashion designer by profession and did her leather specialization
+                        from National Institute of Fashion Technology, Delhi , India. Baking was her hobby but she
+                        gradually became her passion and profession.</p><br><br>
                 </div>
             </div>
+        </div>
 
     </form>
 </article>
